@@ -10,21 +10,22 @@ import java.util.List;
 @Service
 public class CustomerService {
     @Autowired
-    private CustomerRepository customerRepository;
+    private final CustomerRepository customerRepository;
+
+    public CustomerService(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
 
     public Customer addCustomer(Customer customer) {
-        Customer save = customerRepository.save(customer);
-        return save;
+        return customerRepository.save(customer);
     }
 
     public List<Customer> findAllCustomer(){
-        List<Customer> customers = customerRepository.findAll();
-        return customers;
+        return customerRepository.findAll();
     }
 
     public Customer getCustomerById(Long customerId){
-        Customer customer = customerRepository.findById(customerId).get();
-        return customer;
+        return customerRepository.findById(customerId).get();
     }
 
     public void deleteCustomerById(Long customerId) {
