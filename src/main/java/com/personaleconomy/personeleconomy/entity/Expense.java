@@ -1,11 +1,10 @@
 package com.personaleconomy.personeleconomy.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
@@ -14,6 +13,10 @@ import java.time.LocalDate;
 @Setter
 @ToString
 public class Expense {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private int amount;
     private LocalDate Date;
