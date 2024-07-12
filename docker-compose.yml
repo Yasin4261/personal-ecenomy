@@ -1,0 +1,19 @@
+version: '2.24'
+
+services:
+  personael-economy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:latest
+    environment:
+      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: deneme
+    ports:
+      - "3307:3307"

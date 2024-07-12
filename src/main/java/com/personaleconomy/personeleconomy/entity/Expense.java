@@ -22,5 +22,5 @@ public class Expense {
     private int amount;
     private LocalDate Date;
     private String title;
-    private String Message;
+    private String message;
 }
