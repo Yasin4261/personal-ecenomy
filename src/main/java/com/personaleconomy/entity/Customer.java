@@ -1,4 +1,4 @@
-package com.personaleconomy.personeleconomy.entity;
+package com.personaleconomy.entity;
 
 
 import jakarta.persistence.*;

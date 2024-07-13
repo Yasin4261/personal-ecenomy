@@ -1,4 +1,4 @@
-package com.personaleconomy.personeleconomy;
+package com.personaleconomy;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

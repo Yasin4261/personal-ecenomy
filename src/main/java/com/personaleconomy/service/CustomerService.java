@@ -1,7 +1,7 @@
-package com.personaleconomy.personeleconomy.service;
+package com.personaleconomy.service;
 
-import com.personaleconomy.personeleconomy.entity.Customer;
-import com.personaleconomy.personeleconomy.repository.CustomerRepository;
+import com.personaleconomy.entity.Customer;
+import com.personaleconomy.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

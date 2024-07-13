@@ -1,6 +1,6 @@
-package com.personaleconomy.personeleconomy.repository;
+package com.personaleconomy.repository;
 
-import com.personaleconomy.personeleconomy.entity.User;
+import com.personaleconomy.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

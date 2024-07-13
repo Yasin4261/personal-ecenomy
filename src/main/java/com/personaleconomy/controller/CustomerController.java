@@ -1,7 +1,7 @@
-package com.personaleconomy.personeleconomy.controller;
+package com.personaleconomy.controller;
 
-import com.personaleconomy.personeleconomy.entity.Customer;
-import com.personaleconomy.personeleconomy.service.CustomerService;
+import com.personaleconomy.entity.Customer;
+import com.personaleconomy.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.personaleconomy.personeleconomy;
+package com.personaleconomy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
